@@ -1,3 +1,11 @@
+#region Info on this script
+<#
+Creator: Scott Owen
+12/14/2017
+scott@owen.on.ca
+#>
+#endregion
+
 #region 100 add user to groups
 <#
 https://community.spiceworks.com/how_to/50409-add-ad-user-to-groups-with-powershell
@@ -32,7 +40,7 @@ $RoleSpecific = read-host "Which department is this user apart of
 "
 #endregion 4
 
-#region 4 Accounting 
+#region 4 Accounting
 if ($RoleSpecific = "1")
 {
 Add-ADGroupMember -Identity "Accounting Team" -Member $user

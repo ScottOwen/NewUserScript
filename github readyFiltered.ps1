@@ -1,3 +1,11 @@
+#region Info on this script
+<#
+Creator: Scott Owen
+12/14/2017
+scott@owen.on.ca
+#>
+#endregion
+
 $configFiles = Get-ChildItem -Path \\OFFICE-NAS\InfoSys\Internal\Scripts\Powershell\NewUserScript* -Include *.ps1 -Exclude *Filtered.ps1 -Recurse -Force
 foreach ($file in $configFiles)
 {
@@ -9,10 +17,9 @@ $fqpn = "\\OFFICE-NAS\InfoSys\Internal\Scripts\Powershell\NewUserScript\Github\"
 Copy-Item $file -Destination $fqpn
 $NewFile = Get-ChildItem -Path $fqpn
     (Get-Content $NewFile.PSPath) |
-    Foreach-Object { $_ -replace "Project1", "Project1" } |    
-    Foreach-Object { $_ -replace "Project2", "Project2" } |    
-    Foreach-Object { $_ -replace "Project3", "Project3" } |    
-    Foreach-Object { $_ -replace "Project4", "Project4" } |    
+    Foreach-Object { $_ -replace "Project1", "Project1" } |
+    Foreach-Object { $_ -replace "Project2", "Project2" } |
+    Foreach-Object { $_ -replace "Project3", "Project3" } |
+    Foreach-Object { $_ -replace "Project4", "Project4" } |
     Set-Content $NewFile.PSPath
 }
-

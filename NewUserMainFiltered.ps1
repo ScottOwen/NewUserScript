@@ -2,7 +2,7 @@
 <#
 Creator: Scott Owen
 12/14/2017
-sowen@Project4.ca
+scott@owen.on.ca
 
 Requirements
 -Account created with default settings in AD
@@ -33,7 +33,7 @@ Import-PSSession -Session $session -module ActiveDirectory
 
 #region read in username
 <#
-read-host allows input after the text and places in variable 
+read-host allows input after the text and places in variable
 #>
 $user = Read-Host -Prompt 'What is the username of the new user'
 #endregion
@@ -53,7 +53,7 @@ $ScriptToRun = "\\office-nas\infosys\Internal\Scripts\Powershell\NewUserScript\M
 
 #region Sends welcome email with all info needed to setup accounts
 <#
-Calls on the welcome email script created by @jlake, sends the email address created above as a parameter 
+Calls on the welcome email script created by @jlake, sends the email address created above as a parameter
 #>
 $ScriptToRun = "c:\Welcome_Email.ps1"
 &$ScriptToRun -username $user

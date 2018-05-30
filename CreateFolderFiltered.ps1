@@ -1,3 +1,11 @@
+#region Info on this script
+<#
+Creator: Scott Owen
+12/14/2017
+scott@owen.on.ca
+#>
+#endregion
+
 #region create new folder, assign permissions
 <#
 https://blogs.technet.microsoft.com/heyscriptingguy/2012/02/21/learn-four-ways-to-use-powershell-to-create-folders/

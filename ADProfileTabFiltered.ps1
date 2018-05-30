@@ -1,3 +1,11 @@
+#region Info on this script
+<#
+Creator: Scott Owen
+12/14/2017
+scott@owen.on.ca
+#>
+#endregion
+
 <#
 
 #region set as home directory

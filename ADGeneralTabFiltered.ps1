@@ -1,3 +1,11 @@
+#region Info on this script
+<#
+Creator: Scott Owen
+12/14/2017
+scott@owen.on.ca
+#>
+#endregion
+
 #region modify email address in the account
 <#
 https://community.spiceworks.com/topic/491222-powershell-get-all-users-in-an-adgroup-with-the-displayname
